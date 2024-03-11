@@ -1,0 +1,22 @@
+{
+  "name": "devdrill",
+  "version": "1.0.0",
+  "description": "A dynamic web application crafted to elevate a user’s web development interview readiness through the power of digital flashcards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Optimo1983/devdrill.git"
+  },
+  "author": "Justin Schiller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Optimo1983/devdrill/issues"
+  },
+  "homepage": "https://github.com/Optimo1983/devdrill#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
