@@ -4,7 +4,7 @@
   "description": "A dynamic web application crafted to elevate a user’s web development interview readiness through the power of digital flashcards",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/Optimo1983/devdrill#readme",
   "dependencies": {
-    "express": "^4.18.3"
+    "config": "^3.3.11",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0",
+    "joi": "^17.12.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.2"
   }
 }

@@ -1,0 +1,7 @@
+{
+   "port": "PORT",
+   "dbHost":"DB_HOST",
+   "dbName":"DB_NAME",
+   "dbUser":"DB_USER",
+   "dbPass":"DB_PASS"
+}
