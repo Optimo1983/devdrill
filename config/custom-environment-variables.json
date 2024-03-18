@@ -1,7 +1,12 @@
 {
    "port": "PORT",
-   "dbHost":"DB_HOST",
-   "dbName":"DB_NAME",
-   "dbUser":"DB_USER",
-   "dbPass":"DB_PASS"
+   "db": {
+      "host":"DB_HOST",
+      "name":"DB_NAME",
+      "user":"DB_USER",
+      "pass":"DB_PASS"
+   },
+   "session": {
+      "secret": "session_secret"
+   }
 }

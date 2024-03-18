@@ -1,4 +1,7 @@
 {
    "app_name": "DevDrill",
-   "version": "1.0.0"
+   "version": "1.0.0",
+   "db": {
+      "connection_limit": 10
+   }
 }
