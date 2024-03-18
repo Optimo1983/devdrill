@@ -4,6 +4,8 @@ const config = require('config');
 const debug = require('debug')('app:startup');
 const morgan = require('morgan');
 const helmet = require('helmet');
+const logger = require('./middleware/logger');
+const authentication = require('./middleware/authentication');
 
 // Sessions setup
 const session = require('express-session');
@@ -22,7 +24,8 @@ const app = express();
 
 // Middleware
 app.set('view engine', 'ejs');
-
+app.use(logger);
+app.use(authentication);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
