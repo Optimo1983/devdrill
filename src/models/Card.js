@@ -1,17 +1,22 @@
-
+const User = require('./User');
+const CardSide = require('./CardSide');
 
 class Card {
-   #dateCreated;
+   userId;
+   createdDate;
+   question;
+   answer;
    
-   constructor() {
-      this.#dateCreated = Date.now();
-   }
+   constructor(user, question, answer) {
+      if ( !user instanceof User ) throw new Error('"user" argument must be of type "User"');
+      if ( !question instanceof CardSide ) throw new Error('"question" argument must be of type "CardSide"');
+      if ( !answer instanceof CardSide ) throw new Error('"answer" argument must be of type "CardSide"');
 
-   getDateCreated() {
-      console.log('Accessing date created')
-      return this.#dateCreated;
+      this.user = user;
+      this.question = question;
+      this.answer = answer;
+      this.createdDate = new Date().toUTCString();
    }
 }
 
-const newCard = new Card();
-console.log(newCard.dateCreated);
+module.exports = Card;
